@@ -1,13 +1,8 @@
 #!/bin/bash
 set -e
 
+# Iniciar el dashboard Dash en segundo plano
 python app.py > /tmp/dash.log 2>&1 &
 
-sleep 8
-
-exec jupyter notebook \
-  --ip=0.0.0.0 \
-  --port=${PORT:-8888} \
-  --NotebookApp.token='' \
-  --NotebookApp.password='' \
-  --ServerApp.allow_origin='*'
+# Permitir que Binder inicie su propio servidor Jupyter
+exec "$@"
