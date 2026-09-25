@@ -1,7 +1,7 @@
 PROYECTO FINAL - PROGRAMACIÓN PARA CIENCIA DE DATOS II
 
 Repositorio GitHub:
-PENDIENTE
+https://github.com/luijo123/proyecto-final-escalamiento-bpo
 
 Dashboard Binder:
-PENDIENTE
+https://mybinder.org/v2/gh/luijo123/proyecto-final-escalamiento-bpo/HEAD?urlpath=proxy/8050/

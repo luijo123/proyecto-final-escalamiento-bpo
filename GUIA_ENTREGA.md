@@ -151,7 +151,7 @@ Por esta razón, el dashboard se utiliza como una herramienta exploratoria para 
 - [x] Documentación del caso
 - [x] README
 - [x] Informe final
-- [ ] Repositorio GitHub
-- [ ] Enlace Binder
-- [ ] ENLACES.txt final
+- [x] Repositorio GitHub
+- [x] Enlace Binder
+- [x] ENLACES.txt final
 - [ ] ZIP de entrega
