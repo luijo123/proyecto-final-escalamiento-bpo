@@ -1,6 +1,7 @@
 """Dashboard interactivo de predicción de escalamiento en servicio al cliente."""
 
 from pathlib import Path
+import os
 
 import numpy as np
 import pandas as pd
@@ -39,11 +40,18 @@ IMPORTANCE = pd.read_csv(
 ).head(12)
 
 
+binder_prefix = os.environ.get("JUPYTERHUB_SERVICE_PREFIX")
+
+if binder_prefix:
+    requests_prefix = f"{binder_prefix}proxy/8050/"
+else:
+    requests_prefix = "/"
+
 app = Dash(
     __name__,
     title="Predicción de escalamiento BPO",
     suppress_callback_exceptions=True,
-    requests_pathname_prefix="/proxy/8050/"
+    requests_pathname_prefix=requests_prefix
 )
 
 server = app.server
