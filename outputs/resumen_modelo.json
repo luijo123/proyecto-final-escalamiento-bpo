@@ -1,0 +1,9 @@
+{
+  "modelo_seleccionado": "3. Bosque ajustado",
+  "registros_totales": 10000,
+  "registros_prueba": 2500,
+  "tasa_escalamiento": 0.1983,
+  "mejor_auc_prueba": 0.5131425656751014,
+  "semilla": 42,
+  "criterio_seleccion": "Mayor ROC-AUC en conjunto de prueba, tras ajuste por validación cruzada en entrenamiento"
+}

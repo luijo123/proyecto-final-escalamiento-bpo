@@ -1,0 +1,4 @@
+version,variables,regularizacion,hiperparametros,roc_auc_entrenamiento,roc_auc_prueba,brecha_auc,accuracy,precision,recall,f1
+3. Bosque ajustado,Variables operativas + transformación log,Control por profundidad y hoja mínima,"{""model__class_weight"": null, ""model__max_depth"": 5, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 2, ""model__n_estimators"": 220}",0.644771287406763,0.5131425656751014,0.13162872173166162,0.8016,0.0,0.0,0.0
+2. Logistica regularizada,Variables operativas + transformación log,"L1, C=0.1","{""model__C"": 0.1, ""model__class_weight"": ""balanced"", ""model__penalty"": ""l1"", ""model__solver"": ""liblinear""}",0.5353575994446464,0.5069382404545747,0.028419358990071752,0.4976,0.2085889570552147,0.5483870967741935,0.3022222222222222
+1. Linea base,AHT como predictor único,"L2, C=1","{""C"": 1.0}",0.510269164624372,0.4750277670465521,0.03524139757781991,0.8016,0.0,0.0,0.0
