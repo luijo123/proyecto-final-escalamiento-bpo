@@ -42,7 +42,8 @@ IMPORTANCE = pd.read_csv(
 app = Dash(
     __name__,
     title="Predicción de escalamiento BPO",
-    suppress_callback_exceptions=True
+    suppress_callback_exceptions=True,
+    requests_pathname_prefix="/proxy/8050/"
 )
 
 server = app.server
